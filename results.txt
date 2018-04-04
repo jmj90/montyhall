@@ -1,0 +1,3 @@
+simulation ran 10000 times
+keeping initial choice: 32%
+changing initial choice: 67%
