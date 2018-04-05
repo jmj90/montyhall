@@ -9,10 +9,10 @@ function montyHall(simulations) {
 
   for (let i = 0; i <= simulations; i++) {
     let winningSelection = Math.floor(Math.random()*3) + 1;
-    let innitialSelection = Math.floor(Math.random()*3)+ 1;
+    let initialSelection = Math.floor(Math.random()*3)+ 1;
     let scratchSelection;
 
-    switch (innitialSelection) {
+    switch (initialSelection) {
       case 1:
         scratchSelection =
           winningSelection != 2 ? 2 : 3;
@@ -29,7 +29,7 @@ function montyHall(simulations) {
         break;
      }
 
-    if (innitialSelection === winningSelection) {
+    if (initialSelection === winningSelection) {
       results.keep ++
     } else {
       results.change ++;
