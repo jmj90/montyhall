@@ -17,7 +17,7 @@ function montyHall(simulations) {
 
     // creating random winning selections and user selections
     let winningSelection = Math.floor(Math.random()*3) + 1;
-    let innitialSelection = Math.floor(Math.random()*3)+ 1;
+    let initialSelection = Math.floor(Math.random()*3)+ 1;
 
     // creating our scratch choice after a users innitial selection is made. At
     // this point we don't know what our scratch selection will be, so we define
@@ -26,7 +26,7 @@ function montyHall(simulations) {
 
     // a switchc/case statement to declare what our scratch selection will be
       // -- we could use a lot of if statements, but that doenst look nice
-    switch (innitialSelection) {
+    switch (initialSelection) {
       case 1:
         scratchSelection =
           winningSelection != 2 ? 2 : 3;
@@ -43,11 +43,11 @@ function montyHall(simulations) {
         break;
      }
 
-    // if user innitialSelection is the correct answer, increment the keep value
-    if (innitialSelection === winningSelection) {
+    // if user initialSelection is the correct answer, increment the keep value
+    if (initialSelection === winningSelection) {
       results.keep ++
     } else {
-      // if user innitialSelection is incorrect and they should have changed,
+      // if user initialSelection is incorrect and they should have changed,
       // increment the change value
       results.change ++;
     }
