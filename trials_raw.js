@@ -12,6 +12,7 @@ function montyHall(simulations) {
     let initialSelection = Math.floor(Math.random()*3)+ 1;
     let scratchSelection;
 
+    // really dont even need to set the scratch selection, but the monty hall problem does call for it.
     switch (initialSelection) {
       case 1:
         scratchSelection =
