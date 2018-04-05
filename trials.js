@@ -24,7 +24,7 @@ function montyHall(simulations) {
     // it with no value to begin.
     let scratchSelection;
 
-    // a switchc/case statement to declare what our scratch selection will be
+    // a switch/case statement to declare what our scratch selection will be
       // -- we could use a lot of if statements, but that doenst look nice
     switch (initialSelection) {
       case 1:
