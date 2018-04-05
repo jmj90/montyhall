@@ -19,6 +19,7 @@ function montyHall(simulations) {
     let winningSelection = Math.floor(Math.random()*3) + 1;
     let initialSelection = Math.floor(Math.random()*3)+ 1;
 
+    // really dont even need to set the scratch selection, but the monty hall problem does call for it.
     // creating our scratch choice after a users innitial selection is made. At
     // this point we don't know what our scratch selection will be, so we define
     // it with no value to begin.
